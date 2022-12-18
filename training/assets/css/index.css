@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.7;
+    background-color: rgba(211, 211, 211, 0.01);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 200;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+p{
+    font-weight: 200;
+}
+
+/* div p1 */
+.p1{
+    padding: 10px 12px;
+}
+
+.p1 p{
+    float: left;
+}
+
+.p1 address{
+    float: right;
+    padding-right: 30px;
+}
+
+/* NAV SECTION */
+nav{
+    background-color: red;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
+}
+
+
+ul li{
+    display: inline;
+    padding-left: 30px;
+
+}
+
+ul li a{
+    color: white;
+    font-weight: 200;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+
+}
+
+ul li a img{
+    float: left;
+    margin-top: 15px;
+    padding-left: 10px;
+    width: 90px;
+    height: 30px;
+}
+
+
+/* DIV P2 */
+
+.p2{
+    background-image: url(/assets/images/slider-1-1.jpg);
+    width: 100%;
+    height: 500px;
+    margin-top:-80px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.p2 h1{
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 700px;
+    padding-top: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.p2 .btn{
+    padding: 18px 23px;
+    border: none;
+    background-color: #ff0000;
+    margin-left: 260px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+

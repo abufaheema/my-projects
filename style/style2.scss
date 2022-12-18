@@ -1,0 +1,45 @@
+.topnav{
+
+    li{
+        display: inline;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-size: 24px;
+            padding: 8px 8px;
+            min-height: 16px;
+        }
+
+        .trigram{
+            display: none ;
+            font-size: 40px;
+        }
+
+
+    }
+
+    .topnav-right{
+        float: right;
+        }
+    
+       
+
+
+}
+
+@media screen and (max-width:680px)  {
+    
+    .topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    .topnav li.trigram   {
+        display: block;
+        float: right;
+        
+        
+    }
+    
+}

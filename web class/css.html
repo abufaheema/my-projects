@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        body{
+            counter-reset: sect;
+        }
+        h1{
+            counter-reset: subsect;
+        }
+        h1::before{
+            counter-increment: sect;
+            content: 'Chapter'' '  counter(sect) ':' ' ';
+        }
+        h2::before{
+            counter-increment: subsect;
+            content: counter(sect) '.' counter(subsect);
+        }
+        .h1{
+            border-style: solid;
+            border-color: red green yellow blue;
+            border-width: 20px 25px 30px 35px;
+            border-radius: 45.5px;
+        }
+        .h2{
+            text-align: center;
+        }
+        #div{
+            border: 2px solid black;
+            width: 200px;
+            height: 350px;
+            padding: 20px;
+            text-align: justify;
+            
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: wheat;
+        }
+        ul li{
+            display: inline;
+            border-right: 2px solid black;
+        }
+        ul li:last-child{
+            border-right: none;
+        }
+        ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 40px;
+        }
+
+        <!--dropdown nav styling-->
+
+        li.dropdown{
+            display: inline-block;
+        }
+
+        .dropbtn-content{
+            display: none;
+            position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+            z-index: 1;
+
+        }
+        .dropbtn-content a{
+            color: red;
+            text-decoration: none;
+            display: block;
+            padding: 12px 16px;
+            text-align: center;
+
+        }
+        .dropbtn-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropbtn-content {
+  display: block;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header, .footer{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.column{
+    float: left;
+    width: 33.33%;
+    background-color: white;
+
+
+}
+
+@media screen and (max-width:600px) {
+    .column{
+        width: 100%;
+        
+    }
+}
+
+.div1{
+    width: 200px;
+    height: 200px;
+    background-image: conic-gradient(red, yellow,green, blue, black);
+    border-radius: 50%;
+    transform: rotate(180deg);
+    transform: translate(60px,40px);
+}
+
+.div2{
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+    border-radius: 50%;
+    float: right;
+}
+      
+        
+
+
+    </style>
+</head>
+<body>
+    
+<h1 style="outline-style: solid; outline-offset:10px;">Html tutorial</h1>
+<h2>Html tutorial</h2>
+<h2>Html tutorial</h2>
+
+
+    <h1 class="h1">Css tutorial</h1>
+    <h2 class="h2">Html tutorial</h2>
+    <h2>Html tutorial</h2>
+    
+
+
+        <h1 style="border-left: 7px solid green; background-color:aqua"> tutorial</h1>
+        <h2 style="border-bottom: 3px solid red;">Html tutorial</h2>
+        <h2>Html tutorial</h2>
+
+        <img src="/image/computer1.jpg" alt=""> <br><br><br>
+
+
+        <div id="div">
+            In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 
+            'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.
+        </div> <br><br><br><br>
+        
+
+        <nav>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">News</a></li>
+                <li class="dropdown"><a href="" class="dropbtn">Contact</a>
+                    <div class="dropbtn-content">
+                        <a href="">Home</a>
+                        <a href="">Home</a>
+                        <a href="">Home</a>
+                        <a href="">Home</a>
+                    </div>               
+                </li>
+                <li style="float: right;"><a href="" >About</a></li>
+            </ul>
+        </nav>
+
+<br><br><br><br><br>
+
+
+
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="topnav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+
+        <div class="row" >
+            <div class="column">
+                <h3>Column</h3>
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit <br>
+                     Maecenas sit amet pretium urna. <br> Vivamus venenatis velit nec <br> neque ultricies,
+                      eget elementum <br> magna tristique. Quisque <br> vehicula, risus eget aliquam <br> placerat,
+                     purus leo tincidunt eros, <br> eget luctus quam orci in velit. <br>
+                      Praesent scelerisque tortor sed <br> accumsan convallis.</p>
+            </div>
+
+            <div class="column">
+                <h3>Column</h3>
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit <br>
+                     Maecenas sit amet pretium urna. <br> Vivamus venenatis velit nec <br> neque ultricies,
+                      eget elementum <br> magna tristique. Quisque <br> vehicula, risus eget aliquam <br> placerat,
+                     purus leo tincidunt eros, <br> eget luctus quam orci in velit. <br>
+                      Praesent scelerisque tortor sed <br> accumsan convallis.</p>
+            </div>
+
+            <div class="column">
+                <h3>Column</h3>
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit <br>
+                     Maecenas sit amet pretium urna. <br> Vivamus venenatis velit nec <br> neque ultricies,
+                      eget elementum <br> magna tristique. Quisque <br> vehicula, risus eget aliquam <br> placerat,
+                     purus leo tincidunt eros, <br> eget luctus quam orci in velit. <br>
+                      Praesent scelerisque tortor sed <br> accumsan convallis.</p>
+            </div>
+
+            
+            
+            
+        </div>
+        <div class="footer">
+            <h3>Copyright &copy; abufaheema</h3>
+        </div>
+
+        <div class="div1">
+
+        </div>
+
+        <div class="div2">
+
+        </div>
+        
+
+
+<br><br><br>
+</body>
+</html>
