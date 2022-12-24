@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>DAZZLED</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+            <!-- animation link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- FONT AWESOME LINK -->
+  <script src="https://kit.fontawesome.com/4ce20ba390.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <!-- MDB LINK -->
+  <link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+rel="stylesheet"
+/>
+
+ <!-- HOVER LINK -->
+<link rel="styleshee" href="/Hover-master/css/hover.css" media="all">
+<link rel="stylesheet" href="/Hover-master/css/hover-min.css">
+
+<link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light animated fadeInDown">
+          <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-danger fs-3">DAZZ</span> <span class="fs-3">LED</span> </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId">
+                <span class="btn btn-close"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link ms-3 active" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-3" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-3" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-3" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a href="index.html" class="btn btn-primary ms-auto" data-bs-toggle="modal" data-bs-target="#get">Get Started</a>
+                
+            </div>
+      </div>
+    </nav>
+
+
+    <!-- offcanvas -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="off" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+
+
+    <!-- modal -->
+
+    
+    <div class="modal fade" id="get" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" >
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">
+              <span class="text-danger fs-3">DAZZ</span><span class="fs-3">LED</span>
+            </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+   
+
+
+    <!-- CAROUSEL -->
+
+    <section id="slide">
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active c-item">
+                    <img src="/assets/images/bgimg.webp" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption  ">
+                      <h5 class="fs-1 text-uppercase animated fadeInDown delay-1s text-primary">WordPress Theme</h5>
+                      <p class="fs-3 fw-bolder text-capitalize animated fadeInUpBig delay-2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque consequatur iure perspiciatis ipsa architecto quo eos fuga, earum vel!</p>
+                      <p class="animated fadeInUpBig delay-3s">
+                        <a href="" class="btn btn-primary px-4 py-2 fs-5 mt-5 " data-bs-toggle="offcanvas" data-bs-target="#off">Learn More</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item c-item">
+                    <img src="/assets/images/bgimg2.webp" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption  ">
+                      <h5 class="fs-1 text-uppercase animated fadeInDown delay-1s text-primary">Abufaheema Theme</h5>
+                      <p class="fs-3 fw-bolder text-capitalize animated fadeInUpBig delay-2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque consequatur iure perspiciatis ipsa architecto quo eos fuga, earum vel!</p>
+                      <p class="animated fadeInUpBig delay-3s">
+                        <a href="" class="btn btn-primary px-4 py-2 fs-5 mt-5 " data-bs-toggle="offcanvas" data-bs-target="#off">Learn More</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item c-item">
+                    <img src="/assets/images/bgimg3.webp" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption  ">
+                      <h5 class="fs-1 text-uppercase animated fadeInDown delay-1s text-primary">omooye Theme</h5>
+                      <p class="fs-3 fw-bolder text-capitalize animated fadeInUpBig delay-2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab atque consequatur iure perspiciatis ipsa architecto quo eos fuga, earum vel!</p>
+                      <p class="animated fadeInUpBig delay-3s">
+                        <a href="" class="btn btn-primary px-4 py-2 fs-5 mt-5 " data-bs-toggle="offcanvas" data-bs-target="#off">Learn More</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="bi bi-caret-left fs-1" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="bi bi-caret-right fs-1" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+            
+
+
+
+        </div>
+
+
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
