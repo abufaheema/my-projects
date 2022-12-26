@@ -1,0 +1,36 @@
+/* -------------------------------------------------RESET & HELPERS---------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.7;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+}
+
+.a:hover{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------NAVBAR--------------------------------------------------------- */
+
+
