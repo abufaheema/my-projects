@@ -1,0 +1,100 @@
+/* -------------------------------------------------RESET & HELPERS---------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    line-height: 1.7;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+}
+
+.a:hover{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------NAVBAR--------------------------------------------------------- */
+
+.navbar .navbar-brand{
+    vertical-align: middle;
+}
+
+
+
+.navbar .navbar-nav .nav-link{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-link::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: lightgreen;
+    margin: auto;
+   display:block ;
+   transition: 0.2s all ease-in;
+}
+
+.nav-link.active::after{
+    width: 100%;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.btn-brand{
+    background-color: green;
+    width: 0;
+    height: 40px;
+    border: 0;
+
+}
+
+.btn-brand i{
+    color: white;  
+}
+
+.btn-brand:hover{
+    background-color: green !important;
+}
+
+
+
+@media (max-width:992px) {
+    .navbar-brand{
+        margin: auto;
+    }
+    
+    
+
+}
+
+/* OFFCANVAs-------------------------------------------------------------------------------------------------- */
+.line{
+    background-color: green;
+    width: 50%;
+    height: 50px;
+}
