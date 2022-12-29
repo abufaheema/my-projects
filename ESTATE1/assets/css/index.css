@@ -24,10 +24,38 @@ a{
     font-weight: 600;
 }
 
+.section-padding{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.border-hover{
+    transition: all 0.4s ease-out;
+    border: 2px solid transparent;
+}
+
+.border-hover:hover{
+    border-color: #2eca6a;
+}
+
 
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
+}
+
+.btn1{
+    color: black;
+    border: none;
+    outline: none;
+    padding: 18px 24px;
+    text-align: center;
+    background-color: #2eca6a;
+    width: 50%;
+}
+
+.btn1:hover{
+    background-color: rgba(0, 128, 0, 0.897) !important;
+    color: white !important
 }
 
 
@@ -41,17 +69,29 @@ h1,h2,h3,h4,h5,h6{
 
 .navbar .navbar-nav .nav-link{
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
     text-transform: uppercase;
     cursor: pointer;
+
+}
+.nav-link:hover{
+    color: white !important;
+    background-color: #2eca6a;
+    border-radius: 10px;
+}
+.nav-link.active{
+    color: #2eca6a !important;
+}
+.nav-link.active:hover{
+    color: white !important;
 }
 
 .nav-link::after{
     content: ' ';
     width: 0;
     height: 3px;
-    background-color: lightgreen;
+    background-color: #2eca6a;
     margin: auto;
    display:block ;
    transition: 0.2s all ease-in;
@@ -63,22 +103,38 @@ h1,h2,h3,h4,h5,h6{
 
 .nav-link:hover::after{
     width: 100%;
+    background-color: white;
+}
+
+.btn{
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 32px;
+    text-transform: capitalize;
 }
 
 .btn-brand{
-    background-color: green;
-    width: 0;
-    height: 40px;
-    border: 0;
-
+    background-color: #2eca6a;
 }
 
-.btn-brand i{
-    color: white;  
+.btn-brand1{
+    background-color: #2eca6a;
+    border-radius: 50px;
 }
+
+.btn-brand1:hover{
+    background-color: rgba(0, 128, 0, 0.897) !important;
+    color: white !important;
+}
+
 
 .btn-brand:hover{
-    background-color: green !important;
+    background-color: rgba(0, 128, 0, 0.897) !important;
+    color: white !important;
 }
 
 
@@ -93,8 +149,153 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* OFFCANVAs-------------------------------------------------------------------------------------------------- */
-.line{
-    background-color: green;
-    width: 50%;
-    height: 50px;
+.search::after{
+    content: ' ';
+    width: 30%;
+    height: 4px;
+    background-color: lightgreen;
+    display: block;
+    transition: all 0.4s ease-in;
+    margin-top: 15px;
+}
+
+.offcanvas{
+    transition: all 0.5s ease-in-out;
+    /* width: 50% !important; */
+}
+
+ .offcanvas .offcanvas-body input:focus{
+    border-color: #2eca6a;
+} 
+
+.offcanvas .offcanvas-body select:focus{
+    border-color: #2eca6a;
+}
+
+@media (max-width:992px) {
+    .offcanvas{
+        width: 75% !important;
+    }
+}
+
+
+/* CAROUSEL----------------------------------------------------------------------------------------- */
+.carousel-item {
+    height: 500px;
+   
+  }
+  .c-img{
+    background-image: url(/assets/images/arch1-1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.8);
+  }
+  .c-img2{
+    background-image: url(/assets/images/archi-3.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.8);
+
+  }
+  .c-img3{
+    background-image: url(/assets/images/archi-2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.8);
+
+  }
+  .c-img4{
+    background-image: url(/assets/images/archi-4.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.8);
+
+  }
+  .c-img5{
+    background-image: url(/assets/images/archi-5.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(0.8);
+
+  }
+
+
+   .carousel-item .carousel-caption {
+    bottom: 220px;
+    z-index: -2;
+  }
+
+
+  /* OUR BRAND-------------------------------------------------------------------------------------------- */
+
+ 
+
+ .service .icon{
+    width: 80px;
+    height: 80px;
+    font-size: 34px;
+    color: #2eca6a;
+  box-shadow: inset 2px 2px 8px rgba(55, 94, 148, 0.3), inset -3px -2px 5px rgba(255, 255, 255, 0.8);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+} 
+
+/* OUR BOARD------------------------------------------------------------------------------------------------------- */
+
+
+
+#board ul li a span{
+    background-color: #2eca6a;
+    padding: 12px;
+    border-radius: 30px;
+    color: white;
+  }
+
+
+
+  /* TESTIMONIAL--------------------------------------------------------------------------------------------------------------- */
+
+
+
+  /* FOOTER--------------------------------------------------------------------------------------------------------------- */
+
+  #footer .list-inline .list-inline-item a span{
+    background-color:white;
+    padding: 12px;
+    border-radius: 30px;
+    color: #2eca6a;
+  }
+
+
+/* ------------------------------------------------------------------------ABOUT SECTION-----------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+
+#hero{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/assets/images/archi-3.jpg);
+    min-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ABOUT BODY--------------------------------------------------------------------------------------------- */
+#sect2 span i{
+    color:#2eca6a;
+    padding: 10px 15px;
+    font-size: 30px;
+    background-color: lightgray;
+    border-radius: 100px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------PROPERTY SECTION---------------------------------------
+---------------------------------------------------------------------------------------------------- */
+#hero1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/assets/images/archi-2.jpg);
+    min-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
