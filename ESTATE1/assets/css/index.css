@@ -143,6 +143,22 @@ h1,h2,h3,h4,h5,h6{
     .navbar-brand{
         margin: auto;
     }
+    /* .nav-link:hover::after{
+        display: none;
+    }
+    .nav-link.active::after{
+        display: none;
+    }
+    .nav-link:hover{
+        display: none;
+    }
+    .nav-link::after{
+        display: none;
+    }
+    .nav-link.active:hover{
+        display: none;
+    } */
+
     
     
 
@@ -299,3 +315,36 @@ h1,h2,h3,h4,h5,h6{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
+/* ------------------------------------------------------------------------SERVICES SECTION-----------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+#hero2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/assets/images/new7.jpg);
+    min-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+/* ------------------------------------------------------------------------CONTACT SECTION-----------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+#hero3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(/assets/images/archi-5.jpg);
+    min-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#ul li a span{
+    background-color: #2eca6a;
+    padding: 12px;
+    border-radius: 30px;
+    color: white;
+  }
+
+
